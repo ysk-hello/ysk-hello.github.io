@@ -15,18 +15,106 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="bg-dark">
-        <h1>portforio site</h1>
+    <!-- header -->
+    <header class="bg-dark text-light p-1">
+        <h1>yskのポートフォリオ</h1>
     </header>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a href="/" class="navbar-brand">portforio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link active">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#activity" class="nav-link">Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skill" class="nav-link">Skill</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- main -->
     <main>
-        <p>test</p>
+        <div class="container">
+            <div id="work" class="mt-5">
+                <h2>Work</h2>
+                <div class="row justify-content-center my-3">
+                    <div class="col-md-3">
+                        <a href="https://ysk-hacklog.com/" target="_blank">
+                            <img src="images/ysk-hacklog.png" alt="ブログ">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>ysk-hacklog</h3>
+                        <p>ブログ。プログラミングやアプリ開発、個人開発の情報を発信します。</p>
+                        <p>Skill: WordPress, HTML, CSS</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center my-3">
+                    <div class="col-md-3">
+                        <a href="https://stock-diary.site/" target="_blank">
+                            <img src="images/stock-diary.png" alt="株日記">
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>株日記</h3>
+                        <p>無料の日記アプリ。株取引を記録して、自分の取引を改善。</p>
+                        <p>Skill: HTML, CSS, Laravel(php), Vue.js(JavaScript), SQL</p>
+                    </div>
+                </div>
+            </div>
+            <div id="activity" class="mt-5">
+                <h2>Activity</h2>
+                <ul>
+                    <li><a href="https://github.com/ysk-hello" target="_blank">GitHub</a></li>
+                    <li><a href="https://qiita.com/lusf" target="_blank">Qiita</a></li>
+                    <li><a href="#" target="_blank">Kindle</a></li>
+                </ul>
+            </div>
+            <div id="skill" class="mt-5">
+                <h2>Skill</h2>
+                <ul>
+                    <li>C#</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>Vue.js</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
     </main>
-    <footer class="bg-dark">
-        <p>test</p>
+    <!-- footer -->
+    <footer class="bg-dark text-light">
+        <div class="text-center">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="#work" class="nav-link link-light">Works</a></li>
+                <li class="nav-item"><a href="#activity" class="nav-link link-light">Activity</a></li>
+                <li class="nav-item"><a href="#skill" class="nav-link link-light">Skill</a></li>
+            </ul>
+            <p>
+                <small>Copyright &copy;2023 ysk-hello, All Rights Reserved.</small>
+
+            </p>
+        </div>
     </footer>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
