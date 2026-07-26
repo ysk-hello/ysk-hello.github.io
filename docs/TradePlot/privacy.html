@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TradePlot プライバシーポリシー</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1f2933;
+    --muted: #5b6773;
+    --border: #e3e8ee;
+    --accent: #2a3c52;
+    --card: #f7f9fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151f2b;
+      --fg: #e6ebf1;
+      --muted: #9aa7b4;
+      --border: #2b3a4a;
+      --accent: #8fb8e6;
+      --card: #1b2734;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, "Segoe UI", "Yu Gothic UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+  header { border-bottom: 2px solid var(--border); padding-bottom: 16px; margin-bottom: 8px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  .updated { color: var(--muted); font-size: 0.85rem; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 32px 0 8px;
+    padding-left: 10px;
+    border-left: 4px solid var(--accent);
+  }
+  p { margin: 8px 0; }
+  ul { padding-left: 1.4em; }
+  li { margin: 6px 0; }
+  strong { color: var(--fg); }
+  code {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.85em;
+    word-break: break-all;
+  }
+  .note {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-top: 12px;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>TradePlot プライバシーポリシー</h1>
+    <div class="updated">最終更新日: 2026年7月26日</div>
+  </header>
+
+  <p>
+    TradePlot（以下「本アプリ」）は、ご自身の株式売買を振り返るためのデスクトップアプリです。
+    本アプリは、お客様のプライバシーを尊重します。本ポリシーは、本アプリが扱う情報とその取り扱いについて説明します。
+  </p>
+
+  <h2>収集・送信する情報について</h2>
+  <p>
+    <strong>本アプリは、いかなる個人情報も収集・送信・共有しません。</strong>
+    本アプリはネットワーク通信を一切行わず、開発者を含む第三者がお客様のデータにアクセスすることはありません。
+  </p>
+
+  <h2>本アプリが扱うデータ</h2>
+  <p>本アプリは、お客様がご自身のために選択・入力した以下のデータを、お使いのPC内でのみ処理します。</p>
+  <ul>
+    <li>
+      <strong>約定履歴・時系列データのCSVファイル</strong>：
+      お客様が証券会社からエクスポートし、本アプリで選択したファイル。
+      本アプリはこれらを<strong>読み取って表示するだけ</strong>で、内容をデータベースに保存しません。
+    </li>
+    <li><strong>振り返りメモ</strong>：お客様が銘柄ごとに入力したメモ。</li>
+    <li><strong>設定</strong>：選択したファイル・フォルダのパスなどのアプリ設定。</li>
+  </ul>
+
+  <h2>データの保存場所</h2>
+  <p>
+    上記の「振り返りメモ」と「設定」は、お使いのPC内のアプリ専用フォルダにのみ保存されます。
+    動作ログも同フォルダ内にのみ出力され、外部には送信されません。
+    CSVファイル自体は、お客様が保存した場所にそのまま残ります。
+  </p>
+  <p>
+    これらのデータはすべてお客様の管理下にあり、
+    <strong>本アプリをアンインストールすると、アプリが保存したデータ（メモ・設定・ログ）は削除されます。</strong>
+  </p>
+
+  <h2>お客様が出力するファイル</h2>
+  <p>
+    本アプリのExcel出力機能・チャート画像の保存機能で作成されるファイルは、お客様が指定した場所に保存されます。
+    これらのファイルの管理はお客様に委ねられます。
+  </p>
+
+  <h2>第三者への提供</h2>
+  <p>本アプリはお客様のデータを第三者に提供しません。</p>
+
+  <h2>本ポリシーの変更</h2>
+  <p>
+    本ポリシーは、必要に応じて更新することがあります。
+    変更があった場合は、本ページの内容を改定し、最終更新日を更新します。
+  </p>
+
+  <h2>お問い合わせ</h2>
+  <p>本ポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+  <ul>
+    <li>開発者: ysk-hello</li>
+    <li>連絡先: https://github.com/ysk-hello</li>
+  </ul>
+
+  <footer>
+    &copy; 2026 ysk-hello. TradePlot Privacy Policy.
+  </footer>
+</div>
+</body>
+</html>
